@@ -3,6 +3,7 @@ const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.MESSAGE_CONTENT],
   checkUpdate: false 
 });
+const keep_alive = require('./keep_alive');
 
 client.once('ready', () => {
   console.log('Selfbot is online!');

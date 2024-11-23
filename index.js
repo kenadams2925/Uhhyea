@@ -55,4 +55,4 @@ client.on("messageCreate", async (message) => {
 });
 
 // Log in to Discord with your app's token
-client.login(TOKEN);
+client.login(process.env.TOKEN);
